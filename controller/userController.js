@@ -1,5 +1,8 @@
 const fs = require('fs');
 
+// @desc      Get random userData
+// @route     GET /api/v1/user/random
+// @access    Public
 module.exports.getRandomUser = (req, res, next) => {
   fs.readFile('./public/data.json', 'utf-8', (err, data) => {
     if (err) {
@@ -18,6 +21,9 @@ module.exports.getRandomUser = (req, res, next) => {
   });
 };
 
+// @desc      Get all userData
+// @route     GET /api/v1/user/all
+// @access    Public
 module.exports.getAllUsers = (req, res, next) => {
   const query = req.query;
   fs.readFile('./public/data.json', 'utf-8', (err, data) => {
@@ -44,6 +50,9 @@ module.exports.getAllUsers = (req, res, next) => {
   });
 };
 
+// @desc      Create a user data
+// @route     POST /api/v1/user/save
+// @access    Public
 module.exports.postSaveUser = (req, res, next) => {
   const newData = req.body;
   const error = req.error;
@@ -68,6 +77,9 @@ module.exports.postSaveUser = (req, res, next) => {
   }
 };
 
+// @desc      Update single user data
+// @route     PATCH /api/v1/user/update/:id
+// @access    Public
 module.exports.updateUser = (req, res) => {
   const { id } = req.params;
   const newData = req.body;
@@ -96,6 +108,9 @@ module.exports.updateUser = (req, res) => {
   }
 };
 
+// @desc      Update user data
+// @route     PATCH /api/v1/user/update/bulk-update
+// @access    Public
 module.exports.balkUpdate = (req, res) => {
   const error = req.error;
   const updateData = req.body;
@@ -140,6 +155,9 @@ module.exports.balkUpdate = (req, res) => {
   }
 };
 
+// @desc      Delete user data
+// @route     DELETE /api/v1/user/delete/:id
+// @access    Public
 module.exports.deleteUser = (req, res) => {
   const { id } = req.params;
   const error = req.error;
