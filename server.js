@@ -40,7 +40,7 @@ const server = http.createServer((req, res) => {
 }); */
 
 // Mount routers
-app.use('/api/v1/user/random', usersRoutes);
+app.use('/api/v1/user', usersRoutes);
 
 app.get('/', (req, res) => {
   // res.send('Hello World');
