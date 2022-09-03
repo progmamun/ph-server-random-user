@@ -1,43 +1,11 @@
 [
   {
-    "id": 1,
-    "name": "Xylia Basil",
-    "gender": "Female",
-    "address": "2 Northfield Avenue",
-    "contact": "482-780-3682",
-    "photoUrl": "http://dummyimage.com/175x100.png/5fa2dd/ffffff"
-  },
-  {
-    "id": 2,
-    "name": "Roberto Cumo",
-    "gender": "Male",
-    "address": "69 Bowman Avenue",
-    "contact": "103-768-6908",
-    "photoUrl": "http://dummyimage.com/162x100.png/ff4444/ffffff"
-  },
-  {
-    "id": 3,
-    "name": "Rina Jenks",
-    "gender": "Genderfluid",
-    "address": "482 Emmet Court",
-    "contact": "835-230-3471",
-    "photoUrl": "http://dummyimage.com/244x100.png/dddddd/000000"
-  },
-  {
     "id": 4,
     "name": "Casey Spiers",
     "gender": "Male",
     "address": "84 North Lane",
     "contact": "661-462-1776",
     "photoUrl": "http://dummyimage.com/109x100.png/ff4444/ffffff"
-  },
-  {
-    "id": 5,
-    "name": "Fae Tod",
-    "gender": "Female",
-    "address": "51 Hoard Crossing",
-    "contact": "792-862-1996",
-    "photoUrl": "http://dummyimage.com/134x100.png/dddddd/000000"
   },
   {
     "id": 6,
@@ -798,5 +766,7 @@
     "address": "458 Vahlen Lane",
     "contact": "754-670-2831",
     "photoUrl": "http://dummyimage.com/144x100.png/ff4444/ffffff"
-  }
+  },
+  {},
+  {}
 ]
